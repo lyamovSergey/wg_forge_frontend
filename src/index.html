@@ -4,7 +4,57 @@
     <meta charset="UTF-8">
     <title>WG Forge Test</title>
 </head>
-<body>
-    <div id="app"></div>
+<body style="overflow: hidden;">
+    <div id="app">
+        <div class="preloader">
+            <img src="preloader.gif" alt="">
+        </div>
+        <div class="search">
+            Поиск: <input type="text" id="search" placeholder="Search...">
+        </div>
+        <table id="statistic">
+            <tr>
+                <td>Orders Count</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Orders Total</td>
+                <td>$ 6722.72</td>
+            </tr>
+            <tr>
+                <td>Median Value</td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>Average Check</td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>Average Check (Female)</td>
+                <td>$</td>
+            </tr>
+            <tr>
+                <td>Average Check (Male)</td>
+                <td>$</td>
+            </tr>
+        </table>
+        <table id='table'>
+            <thead>
+                <tr>
+                    <th id='sortTransaction'>Transaction ID</th>
+                    <th id='sortUser'>User Info</th>
+                    <th id='sortDate'>Order Date</th>
+                    <th id='sortOrder'>Order Amount</th>
+                    <th>Card Number</th>
+                    <th id='sortType'>Card Type</th>
+                    <th id='sortLocation'>Location</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+               
+            </tbody>
+        </table>
+    </div>
+    
 </body>
 </html>
